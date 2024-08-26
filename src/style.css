@@ -21,8 +21,9 @@ body {
 }
 .search-form-button {
     background: blue;
-    padding: 15px 20px;
+    padding: 15px 30px;
     border: none;
+    margin-left: 5px;
     border-radius: 6px;
     color:white;
 }
