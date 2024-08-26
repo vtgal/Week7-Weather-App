@@ -10,6 +10,10 @@ body {
     border-radius: 16px;
     padding: 30px;
 }
+header { 
+    border-bottom: 1px solid blue;
+    padding: 0 0 30px 0;
+}
 
 .search-form-input {
     background-color: #f9f7fe;
@@ -27,4 +31,8 @@ body {
     margin-left: 5px;
     border-radius: 6px;
     color:white;
+}
+footer {
+    border-top: 1px solid blue;
+    padding: 30px 0 0 0;
 }
