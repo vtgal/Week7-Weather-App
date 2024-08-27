@@ -5,7 +5,7 @@ let cityElement = document.querySelector("#city");
 let descriptionElement = document.querySelector("#description");
 
 cityElement.innerHTML = response.data.city;
-descriptionElement = response.data.condition.description;
+descriptionElement.innerHTML = response.data.condition.description;
 temperatureElement.innerHTML = Math.round(temperature);
 }
 
