@@ -5,8 +5,10 @@ let cityElement = document.querySelector("#city");
 let descriptionElement = document.querySelector("#description");
 let humidityElement = document.querySelector("#humidity");
 let windSpeedElement = document.querySelector("#wind-speed");
+let timeElement = document.querySelector("#time");
 
 cityElement.innerHTML = response.data.city;
+timeElement.innerHTML = "Tuesday 14:49";
 descriptionElement.innerHTML = response.data.condition.description;
 humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
@@ -25,8 +27,7 @@ let apiUrl =
 function handleSearchSubmit(event) {
     event.preventDefault();
     let searchInput = document.querySelector("#search-form-input");
-    let cityElement = document.querySelector("#city");
-    cityElement.innerHTML = searchInput.value;
+
     searchCity(searchInput.value);
 }
 
